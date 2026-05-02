@@ -89,7 +89,7 @@ var recipes = [
     category: "dulce",
     subcategory: "Postres",
     time: "60 min",
-    servings: "6",
+    servings: "10",
     ingredients: [
       "2 tazas de agua tibia",
       "4 huevos",
