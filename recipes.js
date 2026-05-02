@@ -322,10 +322,10 @@ var recipes = [
     time: "45 min",
     servings: "",
     ingredients: [
-      "500 gr de avena Quaker extra fina (1 paquete)",
-      "¼ kg de harina Blancaflor",
+      "500 gr de avena extra fina",
+      "¼ kg de harina",
       "2 cdas. de cacao dulce",
-      "1 cdta. de polvo de hornear (Royal)",
+      "1 cdta. de polvo de hornear",
       "400 gr de manteca (2 paquetes)",
       "½ kg de azúcar",
       "3 huevos enteros"
