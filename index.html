@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Mi Recetario</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&family=Raleway:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <style>
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #f7fafc;
+        font-family: 'Jost', sans-serif;
+        color: #16272c;
+      }
+
+      /* ---- HEADER ---- */
+
+      .header {
+        background-color: #16272c;
+        padding: 28px 48px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      .header-left {
+        display: flex;
+        align-items: baseline;
+        gap: 16px;
+      }
+
+      .logo {
+        font-family: 'Raleway', serif;
+        font-size: 2rem;
+        font-weight: 300;
+        color: #b0dae8;
+        letter-spacing: 0.04em;
+      }
+
+      .logo span {
+        font-style: italic;
+        color: #6ca9c8;
+      }
+
+      .header-subtitle {
+        font-size: 0.7rem;
+        font-weight: 300;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #66818a;
+      }
+
+      /* ---- NAV BUTTONS ---- */
+
+      .nav-buttons {
+        display: flex;
+        gap: 12px;
+      }
+
+      .nav-btn {
+        padding: 10px 28px;
+        font-family: 'Jost', sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        cursor: pointer;
+        border: none;
+        transition: background-color 0.2s;
+      }
+
+      .nav-btn.sweet {
+        background-color: #6ca9c8;
+        color: white;
+      }
+
+      .nav-btn.sweet:hover {
+        background-color: #5497b0;
+      }
+
+      .nav-btn.salty {
+        background-color: transparent;
+        color: #b0dae8;
+        border: 1px solid #66818a;
+      }
+
+      .nav-btn.salty:hover {
+        background-color: #c4825a;
+        border-color: #c4825a;
+        color: white;
+      }
+
+      /* ---- WELCOME ---- */
+
+      .welcome {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 48px 48px 0 48px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+
+      .welcome-text h2 {
+        font-family: 'Raleway', serif;
+        font-size: 1.5rem;
+        font-weight: 300;
+        font-style: italic;
+        color: #16272c;
+        margin-bottom: 8px;
+      }
+
+      .welcome-text p {
+        font-size: 0.85rem;
+        color: #66818a;
+        line-height: 1.6;
+      }
+
+      .recipe-count {
+        display: flex;
+        gap: 24px;
+        text-align: center;
+      }
+
+      .count-item {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .count-number {
+        font-family: 'Jost', serif;
+        font-size: 1.7rem;
+        font-weight: 300;
+        color: #6ca9c8;
+        line-height: 1;
+      }
+
+      .count-label {
+        font-size: 0.65rem;
+        font-weight: 500;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #66818a;
+      }
+
+      /* ---- SEARCH ---- */
+
+      .search-bar {
+        max-width: 1100px;
+        margin: 32px auto 0 auto;
+        padding: 0 48px;
+        position: relative;
+      }
+
+      .search-bar input {
+        width: 100%;
+        padding: 14px 20px 14px 44px;
+        border: 1.5px solid #aaccd4;
+        background-color: white;
+        font-family: 'Jost', sans-serif;
+        font-size: 0.9rem;
+        color: #16272c;
+        outline: none;
+        transition: border 0.2s;
+      }
+
+      .search-bar input:focus {
+        border-color: #6ca9c8;
+      }
+
+      .search-bar input::placeholder {
+        color: #90aab0;
+      }
+
+      .search-icon {
+        position: absolute;
+        left: 64px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #90aab0;
+        font-size: 1rem;
+        pointer-events: none;
+      }
+
+      /* ---- MAIN CONTENT ---- */
+
+      .content {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 48px;
+      }
+
+      /* ---- SECTION ---- */
+
+      .section {
+        margin-bottom: 64px;
+        scroll-margin-top: 140px;
+      }
+
+      .section-header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 16px;
+      }
+
+      .section-title {
+        font-family: 'Jost', serif;
+        font-size: 1.3rem;
+        font-weight: 300;
+        font-style: italic;
+        color: #16272c;
+        white-space: nowrap;
+      }
+
+      .section-line {
+        flex: 1;
+        height: 1px;
+        background-color: #aaccd4;
+      }
+
+      .section-count {
+        font-size: 0.65rem;
+        font-weight: 500;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #90aab0;
+        white-space: nowrap;
+      }
+
+      /* ---- FILTER PILLS ---- */
+
+      .filter-pills {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+      }
+
+      .pill {
+        padding: 5px 16px;
+        border: 1.5px solid #aaccd4;
+        background: transparent;
+        font-family: 'Jost', sans-serif;
+        font-size: 0.72rem;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        cursor: pointer;
+        color: #66818a;
+        transition: all 0.2s;
+      }
+
+      .pill:hover {
+        border-color: #6ca9c8;
+        color: #6ca9c8;
+      }
+
+      .pill.active {
+        background-color: #16272c;
+        border-color: #16272c;
+        color: #b0dae8;
+      }
+      
+      .salty-pills .pill {
+      border-color: #d4a88a;
+      color: #7a4832;
+      }
+      
+      .salty-pills .pill:hover {
+        border-color: #c4825a;
+        color: #c4825a;
+      }
+
+      .salty-pills .pill.active {
+        background-color: #7a4832;
+        border-color: #7a4832;
+        color: white;
+      }
+
+      /* ---- RECIPE GRID ---- */
+
+      .recipe-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      .recipe-card {
+        background-color: white;
+        border: 1px solid #d6e8ec;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        height: 180px;
+      }
+
+      .recipe-card.salado {
+      border-color: #eedfd3;
+      }
+
+      .recipe-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(22, 40, 44, 0.1);
+      }
+
+      .card-top-bar {
+        height: 5px;
+        flex-shrink: 0;
+      }
+
+      .dulce .card-top-bar {
+        background-color: #6ca9c8;
+      }
+
+      .salado .card-top-bar {
+        background-color: #c4825a;
+      }
+
+      .card-body {
+        padding: 24px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+
+      .card-subcategory {
+        font-size: 0.65rem;
+        font-weight: 500;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+
+      .dulce .card-subcategory { color: #6ca9c8; }
+      .salado .card-subcategory { color: #c4825a; }
+
+      .card-body h2 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.3;
+        color: #16272c;
+        flex: 1;
+      }
+
+      .card-meta {
+        font-size: 0.75rem;
+        color: #66818a;
+        display: flex;
+        gap: 12px;
+        margin-top: auto;
+        padding-top: 16px;
+        border-top: 1px solid #dcebf0;
+      }
+
+      .card-meta svg {
+      vertical-align: middle;
+      position: relative;
+      top: -1px;
+      }
+
+      .no-results {
+        grid-column: 1 / -1;
+        text-align: center;
+        padding: 48px;
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.3rem;
+        font-style: italic;
+        color: #90aab0;
+      }
+
+      /* ---- MODAL ---- */
+
+      .modal-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background-color: rgba(22, 39, 44, 0.6);
+        z-index: 200;
+        align-items: center;
+        justify-content: center;
+        padding: 32px;
+      }
+
+      .modal-overlay.open {
+        display: flex;
+      }
+
+      .modal {
+        background-color: #e8f0f5;
+        width: 100%;
+        max-width: 900px;
+        max-height: 90vh;
+        overflow-y: auto;
+        position: relative;
+      }
+
+      .modal.salado {
+      background-color: #f5ede8;
+      }
+      
+      .modal-close {
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        background: none;
+        border: none;
+        font-size: 1.6rem;
+        cursor: pointer;
+        color: #66818a;
+        line-height: 1;
+        z-index: 10;
+      }
+
+      .modal-close:hover { color: #16272c; }
+
+      .modal-top-bar { height: 5px; }
+
+      .modal-header {
+        padding: 32px 40px 24px 40px;
+      }
+
+      .modal.salado .modal-header {
+        background-color: #f5ede8;
+      }
+
+      .modal-subcategory {
+        font-size: 0.68rem;
+        font-weight: 500;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+      }
+
+      .modal-title {
+        font-family: 'Jost', sans-serif;
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 1.1;
+        margin-bottom: 12px;
+      }
+
+      .modal-meta {
+        font-size: 0.82rem;
+        color: #66818a;
+        display: flex;
+        gap: 24px;
+      }
+
+      .modal-meta svg {
+      vertical-align: middle;
+      position: relative;
+      top: -1px;
+      }
+
+      .two-columns {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        min-height: 300px;
+      }
+
+      .ingredients-col {
+      padding: 32px;
+      color: #d3ebf0;
+      }
+
+      .modal.salado .ingredients-col {
+      color: #f5e6dc;
+      }
+
+      .modal.dulce .ingredients-col { background-color: #2a4a5a; }
+      .modal.salado .ingredients-col { background-color: #7a4832; }
+
+      .col-title {
+        font-family: 'Jost', sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .ingredients-col ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .ingredients-col ul li {
+        font-size: 0.88rem;
+        line-height: 1.5;
+        margin-bottom: 10px;
+        padding-left: 12px;
+        border-left: 2px solid rgba(255,255,255,0.25);
+      }
+
+      .steps-col {
+        padding: 32px 40px;
+        background-color: white;
+      }
+
+      .steps-col .col-title {
+        color: #16272c;
+        border-bottom: 1px solid #d6e8ec;
+      }
+
+      .modal.salado .steps-col .col-title {
+        border-bottom-color: #d4a88a;
+      }
+
+      .steps-col ol {
+        list-style: none;
+        padding: 0;
+      }
+
+      .step-item {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 12px;
+        align-items: flex-start;
+      }
+
+      .step-number {
+        font-family: 'Jost', serif;
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: #aaccd4;
+        line-height: 1.3;
+        min-width: 28px;
+      }
+
+      .modal.salado .step-number {
+        color: #d4a88a;
+      }
+
+      .step-text {
+        font-size: 0.9rem;
+        line-height: 1.75;
+        color: #16272c;
+        padding-top: 2px;
+      }
+
+      .notes-box {
+        margin: 0 40px 32px 40px;
+        padding: 16px 20px;
+        background-color: #eff9fa;
+        border-left: 3px solid #6ca9c8;
+        font-size: 0.85rem;
+        line-height: 1.7;
+        color: #2a4a5a;
+        font-style: italic;
+      }
+
+      .modal.salado .notes-box {
+        background-color: #faf3ef;
+        border-left-color: #c4825a;
+        color: #7a4832;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-left">
+        <div class="logo">Mi <span>Recetario</span></div>
+        <span class="header-subtitle">Libro de recetas personal</span>
+      </div>
+      <nav class="nav-buttons">
+        <button class="nav-btn sweet" onclick="scrollToSection('sweet-section')">Dulces</button>
+        <button class="nav-btn salty" onclick="scrollToSection('salty-section')">Saladas</button>
+      </nav>
+    </header>
+
+    <!-- WELCOME -->
+    <div class="welcome">
+      <div class="recipe-count">
+        <div class="count-item">
+          <span class="count-number" id="count-total">0</span>
+          <span class="count-label">Recetas</span>
+        </div>
+        <div class="count-item">
+          <span class="count-number" id="count-sweet">0</span>
+          <span class="count-label">Dulces</span>
+        </div>
+        <div class="count-item">
+          <span class="count-number" id="count-salty">0</span>
+          <span class="count-label">Saladas</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEARCH -->
+    <div class="search-bar">
+      <span class="search-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></span>
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Buscar recetas…"
+        oninput="filterRecipes()"
+      />
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+      <section id="sweet-section" class="section">
+        <div class="section-header">
+          <h2 class="section-title">Dulces</h2>
+          <span class="section-line"></span>
+          <span class="section-count" id="sweet-count"></span>
+        </div>
+        <div class="filter-pills" id="sweet-pills"></div>
+        <div id="sweet-list" class="recipe-grid"></div>
+      </section>
+
+      <section id="salty-section" class="section">
+        <div class="section-header">
+          <h2 class="section-title">Saladas</h2>
+          <span class="section-line"></span>
+          <span class="section-count" id="salty-count"></span>
+        </div>
+        <div class="filter-pills salty-pills" id="salty-pills"></div>
+        <div id="salty-list" class="recipe-grid"></div>
+      </section>
+
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
+      <div class="modal" id="modal-content">
+        <button class="modal-close" onclick="closeModal()">×</button>
+      </div>
+    </div>
+
+    <script src="recipes.js"></script>
+
+    <script>
+
+      var activeFilterSweet = "Todas";
+      var activeFilterSalty = "Todas";
+
+      buildPage(recipes);
+
+      function buildPage(recipes) {
+        var sweet = recipes.filter(r => r.category === "dulce");
+        var salty = recipes.filter(r => r.category === "salado");
+        document.getElementById("count-total").textContent = recipes.length;
+        document.getElementById("count-sweet").textContent = sweet.length;
+        document.getElementById("count-salty").textContent = salty.length;
+
+        buildPills("sweet-pills", sweet, "dulce");
+        buildPills("salty-pills", salty, "salado");
+
+        renderCards();
+      }
+
+      function buildPills(containerId, recipeList, category) {
+        var subcategories = ["Todas", ...new Set(recipeList.map(r => r.subcategory))];
+        var container = document.getElementById(containerId);
+        container.innerHTML = subcategories.map(sub => `
+          <button
+            class="pill ${sub === 'Todas' ? 'active' : ''}"
+            onclick="setFilter('${category}', '${sub}', this)">
+            ${sub}
+          </button>
+        `).join("");
+      }
+
+      function setFilter(category, value, btn) {
+        if (category === "dulce") activeFilterSweet = value;
+        else activeFilterSalty = value;
+
+        var pillsId = category === "dulce" ? "sweet-pills" : "salty-pills";
+        document.querySelectorAll(`#${pillsId} .pill`).forEach(p => p.classList.remove("active"));
+        btn.classList.add("active");
+
+        renderCards();
+      }
+
+      function filterRecipes() {
+        renderCards();
+      }
+
+      function renderCards() {
+        var search = document.getElementById("search-input").value.toLowerCase();
+
+        var allSweet = recipes.filter(r => r.category === "dulce");
+        var allSalty = recipes.filter(r => r.category === "salado");
+
+        var filteredSweet = allSweet.filter(r => {
+          var matchSearch = r.title.toLowerCase().includes(search);
+          var matchFilter = activeFilterSweet === "Todas" || r.subcategory === activeFilterSweet;
+          return matchSearch && matchFilter;
+        });
+
+        var filteredSalty = allSalty.filter(r => {
+          var matchSearch = r.title.toLowerCase().includes(search);
+          var matchFilter = activeFilterSalty === "Todas" || r.subcategory === activeFilterSalty;
+          return matchSearch && matchFilter;
+        });
+
+        var sweetHtml = filteredSweet.length > 0
+          ? filteredSweet.map(buildCard).join("")
+          : `<div class="no-results">No se encontraron recetas</div>`;
+
+        var saltyHtml = filteredSalty.length > 0
+          ? filteredSalty.map(buildCard).join("")
+          : `<div class="no-results">No se encontraron recetas</div>`;
+
+        document.getElementById("sweet-list").innerHTML = sweetHtml;
+        document.getElementById("salty-list").innerHTML = saltyHtml;
+
+        document.getElementById("sweet-count").textContent = filteredSweet.length + " receta" + (filteredSweet.length !== 1 ? "s" : "");
+        document.getElementById("salty-count").textContent = filteredSalty.length + " receta" + (filteredSalty.length !== 1 ? "s" : "");
+      }
+
+      function buildCard(r) {
+        return `
+          <div class="recipe-card ${r.category}" onclick="openModal('${r.id}')">
+            <div class="card-top-bar"></div>
+            <div class="card-body">
+              <div>
+                <div class="card-subcategory">${r.subcategory}</div>
+                <h2>${r.title}</h2>
+              </div>
+              <div class="card-meta">
+                <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> ${r.time}</span>
+                ${r.servings ? `<span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg> ${isNaN(r.servings) ? r.servings : r.servings + " porciones"}</span>` : ""}
+              </div>
+            </div>
+          </div>
+        `;
+      }
+
+      function openModal(id) {
+        var r = recipes.find(recipe => recipe.id === id);
+
+        var steps = r.steps.map((s, i) => `
+          <li class="step-item">
+            <span class="step-number">${i + 1 < 10 ? '0' + (i + 1) : i + 1}</span>
+            <p class="step-text">${s}</p>
+          </li>
+        `).join("");
+
+        var notes = r.notes
+          ? `<div class="notes-box"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg> <strong>Notas:</strong> ${r.notes}</div>`
+          : "";
+
+        document.getElementById("modal-content").className = `modal ${r.category}`;
+        document.getElementById("modal-content").innerHTML = `
+          <button class="modal-close" onclick="closeModal()">×</button>
+          <div class="modal-top-bar" style="background:${r.category === 'dulce' ? '#6ca9c8' : '#c4825a'}"></div>
+          <div class="modal-header">
+            <div class="modal-subcategory" style="color:${r.category === 'dulce' ? '#6ca9c8' : '#c4825a'}">${r.subcategory}</div>
+            <h2 class="modal-title">${r.title}</h2>
+            <div class="modal-meta">
+              <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> ${r.time}</span>
+              ${r.servings ? `<span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg> ${isNaN(r.servings) ? r.servings : r.servings + " porciones"}</span>` : ""}
+            </div>
+          </div>
+          <div class="two-columns">
+            <div class="ingredients-col">
+              <h3 class="col-title">Ingredientes</h3>
+              <ul>${r.ingredients.map(i =>
+               i.startsWith("—")
+                ? `<li style="font-weight:600; border-left:none; padding-left:0; margin-top:12px; opacity:0.9; letter-spacing:0.05em; list-style:disc; margin-left:16px">${i.replaceAll("—", "").trim()}</li>`
+                  : `<li>${i}</li>`
+              ).join("")}</ul>
+            </div>
+            <div class="steps-col">
+              <h3 class="col-title">Preparación</h3>
+              <ol>${steps}</ol>
+            </div>
+          </div>
+          ${notes}
+        `;
+
+        document.getElementById("modal-overlay").classList.add("open");
+      }
+
+      function closeModal(event) {
+        if (!event || event.target === document.getElementById("modal-overlay")) {
+          document.getElementById("modal-overlay").classList.remove("open");
+        }
+      }
+
+      function scrollToSection(id) {
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+
+        document.querySelectorAll('.nav-btn').forEach(btn => {
+          btn.style.backgroundColor = 'transparent';
+          btn.style.color = '#b0dae8';
+          btn.style.borderColor = '#66818a';
+        });
+
+        if (id === 'sweet-section') {
+          document.querySelector('.nav-btn.sweet').style.backgroundColor = '#6ca9c8';
+          document.querySelector('.nav-btn.sweet').style.borderColor = '#6ca9c8';
+          document.querySelector('.nav-btn.sweet').style.color = 'white';
+        } else {
+          document.querySelector('.nav-btn.salty').style.backgroundColor = '#7a4832';
+          document.querySelector('.nav-btn.salty').style.borderColor = '#7a4832';
+          document.querySelector('.nav-btn.salty').style.color = 'white';
+        }
+      }
+
+    </script>
+
+  </body>
+
+</html>
