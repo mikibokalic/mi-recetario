@@ -296,7 +296,7 @@ var recipes = [
     id: "bizcochuelo",
     title: "Bizcochuelo Express",
     category: "dulce",
-    subcategory: "Postres",
+    subcategory: "Merienda",
     time: "40 min",
     servings: "",
     ingredients: [
@@ -395,6 +395,40 @@ var recipes = [
       "Cocinar en horno por 25-30 minutos."
     ],
     notes: "Cortar ni bien salen del horno."
+  },
+
+  {
+    id: "budin-banana",
+    title: "Budín de Banana",
+    category: "dulce",
+    subcategory: "Merienda",
+    time: "1 h 10 min",
+    servings: "12-15 porciones",
+    ingredients: [
+      "200 gr de manteca",
+      "360 gr de azúcar",
+      "3 huevos",
+      "1 cdita. de esencia de vainilla",
+      "380 gr de bananas (puré)",
+      "360 gr de harina",
+      "3 gr de sal",
+      "5 gr de bicarbonato de sodio",
+      "180 gr de nueces picadas",
+      "— Para el glacé (opcional) —",
+      "Azúcar impalpable cantidad necesaria",
+      "Jugo de naranja cantidad necesaria"
+    ],
+    steps: [
+      "Cremar la manteca con el azúcar hasta integrar bien.",
+      "Incorporar los huevos de a uno, mezclando entre cada uno.",
+      "Agregar la esencia de vainilla y las bananas hechas puré. Mezclar.",
+      "En un bowl aparte, mezclar la harina, la sal y el bicarbonato. Incorporar a la preparación anterior.",
+      "Agregar las nueces picadas y mezclar.",
+      "Volcar en un molde de budín inglés enmantecado y enharinado.",
+      "Cocinar a 170 °C durante 1 hora.",
+      "Opcional — glacé: mezclar azúcar impalpable con jugo de naranja de a poco hasta lograr consistencia cremosa. Verter sobre el budín frío."
+    ],
+    notes: "Rinde un budín inglés de 12 a 15 porciones. El glacé de naranja le da un toque ácido muy rico que contrasta con el dulce de la banana."
   },
 
   // ---- SALADAS ----
