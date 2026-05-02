@@ -315,35 +315,6 @@ var recipes = [
   },
 
   {
-    id: "kvadratki",
-    title: "Kvadratki",
-    category: "dulce",
-    subcategory: "Postres",
-    time: "30 min",
-    servings: "",
-    ingredients: [
-      "200 gr de manteca",
-      "6 cdas. colmadas de Nesquik",
-      "4 huevos",
-      "2 tazas de azúcar",
-      "2 tazas de harina leudante (+ ½ taza si hace falta)",
-      "— Para la cobertura (opcional) —",
-      "Jugo de 1 limón",
-      "c/n de azúcar impalpable"
-    ],
-    steps: [
-      "Derretir la manteca a fuego suave. Agregar el Nesquik y mezclar. Dejar enfriar.",
-      "Batir los huevos con el azúcar hasta que la mezcla quede más o menos blanca y no se sientan tanto los granos de azúcar.",
-      "Ir incorporando la manteca con chocolate mientras se sigue batiendo. Terminar mezclando con espátula.",
-      "Incorporar la harina de a poco con movimientos envolventes, sin aplastar la mezcla.",
-      "Verter en asadera enmantecada y enharinada.",
-      "Hornear: para versión brownie, 6 minutos al máximo y luego 15–18 min a fuego medio. Para versión más cocida, todo a fuego medio con horno precalentado.",
-      "Opcional — cobertura: mezclar el jugo de limón con azúcar impalpable de a poco hasta que tenga consistencia que se desparrame sola. Verter sobre los kvadratki ya cocidos."
-    ],
-    notes: "La versión brownie queda húmeda y densa por dentro. La cobertura de limón le da un contraste ácido muy rico."
-  },
-
-  {
     id: "galletitas-avena",
     title: "Galletitas de Avena",
     category: "dulce",
