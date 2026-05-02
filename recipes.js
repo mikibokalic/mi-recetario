@@ -363,7 +363,7 @@ var recipes = [
       "Incorporar la esencia de vainilla y el rhum.",
       "Trabajar la masa muy bien hasta que quede bien lisa.",
       "Colocar la masa sobre un plato y dejar reposar como mínimo 1 hora en la heladera.",
-      "Sacar de la heladera y formar las medallunitas — deben ser chiquitas y flaquitas.",
+      "Sacar de la heladera y formar las medialunitas — deben ser chiquitas y flaquitas.",
       "Colocar sobre fuente previamente enmantecada y enharinada. Hornear durante 20 minutos."
     ],
     notes: "La clave está en que sean bien chiquitas y flaquitas para que queden crocantes. El rhum les da un sabor muy especial."
