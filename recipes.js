@@ -431,6 +431,43 @@ var recipes = [
     notes: "Rinde un budín inglés de 12 a 15 porciones. El glacé de naranja le da un toque ácido muy rico que contrasta con el dulce de la banana."
   },
 
+{
+    id: "budin-limon",
+    title: "Budín de Limón con Crumble",
+    category: "dulce",
+    subcategory: "Postres",
+    time: "50 min",
+    servings: "",
+    ingredients: [
+      "— Para el budín —",
+      "120 gr de manteca",
+      "200 gr de azúcar",
+      "3 huevos",
+      "1 cdita. de esencia de vainilla",
+      "Ralladura de 1 limón",
+      "Jugo de 1 limón",
+      "100 cc de leche",
+      "200 gr de harina",
+      "2 cditas. de polvo de hornear",
+      "— Para el crumble —",
+      "50 gr de manteca derretida",
+      "50 gr de azúcar",
+      "30 gr de harina",
+      "20 gr de coco rallado"
+    ],
+    steps: [
+      "Mezclar todos los ingredientes del crumble y reservar en la heladera hasta usar.",
+      "Mezclar el jugo de limón con la leche y dejar reposar — se va a cortar sola, formando una buttermilk casera.",
+      "Cremar la manteca con el azúcar hasta que cambie a un color más blanco.",
+      "Agregar la ralladura de limón, la vainilla y los huevos de a uno, mezclando entre cada uno.",
+      "Incorporar la buttermilk (leche cortada con limón) y mezclar.",
+      "Incorporar la harina con el polvo de hornear. Mezclar hasta integrar.",
+      "Volcar en una budinera enmantecada y cubrir con el crumble.",
+      "Hornear a 180 °C por 40-45 minutos, o hasta que al pinchar con un palillo salga limpio."
+    ],
+    notes: "La mezcla de jugo de limón con leche hace una buttermilk casera que le da mucha humedad al budín. El crumble de coco le da un toque crocante muy rico."
+  },
+  
   // ---- SALADAS ----
 
   {
