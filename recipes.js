@@ -483,7 +483,7 @@ var recipes = [
       "Con una cuchara, tomar porciones de masa, pasarlas a una cuchara aceitada y deslizarlas al caldo. Cocinar aprox. 7 minutos.",
       "Retirar los žličniki con espumadera, escurrir bien y servir."
     ],
-    notes: "Versión dulce: dorarlos en una sartén con manteca y espolvorear con azúcar. Quedan crujientes por fuera y tiernos por dentro."
+    notes: "Se pueden servir con una rica salsa de tomate! Y si queres hacer una versión dulce: dorarlos en una sartén con manteca y espolvorear con azúcar. Quedan crujientes por fuera y tiernos por dentro."
   },
   
   {
