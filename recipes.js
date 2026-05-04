@@ -463,6 +463,30 @@ var recipes = [
   },
 
   {
+    id: "zlicniki",
+    title: "Žličniki",
+    category: "salado",
+    subcategory: "Principales",
+    time: "30 min",
+    servings: "",
+    ingredients: [
+      "500 gr de harina",
+      "1 a 2 huevos",
+      "400 ml de agua aprox.",
+      "2 cdas. de aceite"
+    ],
+    steps: [
+      "Mezclar el agua y el aceite. Agregar los huevos y mezclar bien.",
+      "Ir agregando la harina de a poco, mezclando continuamente hasta obtener una masa espesa y consistente. Si hace falta, agregar más harina. La masa tiene que quedar firme, densa — no líquida.",
+      "Dejar reposar la masa 15 minutos.",
+      "En una olla grande, hervir agua con sal.",
+      "Con una cuchara, tomar porciones de masa, pasarlas a una cuchara aceitada y deslizarlas al caldo. Cocinar aprox. 7 minutos.",
+      "Retirar los žličniki con espumadera, escurrir bien y servir."
+    ],
+    notes: "Versión dulce: dorarlos en una sartén con manteca y espolvorear con azúcar. Quedan crujientes por fuera y tiernos por dentro."
+  },
+  
+  {
     id: "guiso-lentejas",
     title: "Guiso de Lentejas",
     category: "salado",
