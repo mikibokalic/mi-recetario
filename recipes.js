@@ -694,4 +694,585 @@ var recipes = [
     notes: "La única clave es cortar las papas MUY finas para que se cocinen parejas. No será para todos los días, pero cuando se hace, se disfruta."
   }
 
+,{
+    id: "cookies-express",
+    title: "Cookies Express",
+    category: "dulce",
+    subcategory: "Merienda",
+    time: "45 min + frío",
+    servings: "",
+    ingredients: [
+      "170 gr de manteca (quemada/noisette)",
+      "65 gr de azúcar blanca",
+      "30 gr de azúcar negra (mascabado)",
+      "170 gr de azúcar rubia",
+      "1 huevo + 1 yema",
+      "1 chorrito de esencia de vainilla",
+      "1 cda. de crema de leche (opcional)",
+      "220 gr de harina 0000",
+      "1 pizca de bicarbonato de sodio",
+      "1 pizca de sal",
+      "Chocolate semiamargo en trozos o chips a gusto"
+    ],
+    steps: [
+      "Quemar la manteca a fuego medio hasta que tome color avellana y aroma tostado. Dejar enfriar completamente.",
+      "Batir la manteca fría con los tres azúcares.",
+      "Añadir el huevo, la yema, la crema y la vainilla. Mezclar.",
+      "Incorporar la harina, bicarbonato y sal sin amasar de más.",
+      "Añadir el chocolate, formar bollos de aprox. 80-100 gr y congelar por al menos 30 minutos.",
+      "Con el horno precalentado a 200 °C, hornear directo del congelador por 15-18 minutos hasta que estén doradas por fuera."
+    ],
+    notes: "La clave es la manteca noisette y el frío extremo antes del horno. No saltear el paso del congelador — es lo que evita que se expandan de más."
+  }
+
+  ,{
+    id: "pasta-frola",
+    title: "Pasta Frola de Dulce de Leche y Nueces",
+    category: "dulce",
+    subcategory: "Postres",
+    time: "1 h 30 min",
+    servings: "",
+    ingredients: [
+      "— Para la masa —",
+      "200 gr de harina",
+      "50 gr de azúcar impalpable",
+      "½ cdta. de sal",
+      "125 gr de manteca fría en cubos",
+      "1 yema",
+      "— Para el relleno —",
+      "400 gr de dulce de leche repostero",
+      "200 gr de nueces picadas"
+    ],
+    steps: [
+      "Tamizar la harina con el azúcar impalpable y la sal.",
+      "Agregar la manteca fría en cubos y formar un granulado con los dedos.",
+      "Agregar la yema y unir hasta formar una masa. No amasar.",
+      "Llevar el bollo a la heladera por 1 hora aprox.",
+      "Mientras, derretir el dulce de leche repostero y mezclar con las nueces picadas. Reservar.",
+      "Estirar la masa y forrar un molde. Guardar parte de la masa para las tiritas de arriba.",
+      "Rellenar con la mezcla de dulce de leche y nueces.",
+      "Terminar con las tiritas de masa entrelazadas por encima.",
+      "Hornear a 180 °C por 40 minutos."
+    ],
+    notes: "Lo más importante: no amasar. Solo unir hasta que se forme la masa para que quede tierna y arenosa."
+  }
+
+  ,{
+    id: "pasta-cremosa-leche",
+    title: "Pasta Cremosa en Leche",
+    category: "salado",
+    subcategory: "Principales",
+    time: "20 min",
+    servings: "2",
+    ingredients: [
+      "200 gr de pasta (la que tengas)",
+      "600 ml de leche",
+      "300 ml de agua",
+      "2 cdas. de aceite de oliva",
+      "2 dientes de ajo machacados",
+      "Sal y pimienta a gusto",
+      "Queso rallado para servir"
+    ],
+    steps: [
+      "Poner en una olla la pasta cruda con la leche, el agua, el aceite de oliva, el ajo machacado, sal y pimienta.",
+      "Llevar a fuego fuerte hasta que rompa hervor.",
+      "Bajar el fuego y cocinar mezclando seguido hasta que se evapore el líquido.",
+      "Si la pasta está dura o la salsa seca, agregar un chorrito de agua.",
+      "Servir con queso rallado."
+    ],
+    notes: "Sin doble olla, sin colar — todo en una sola. El almidón de la pasta espesa la leche y crea una salsa cremosa natural."
+  }
+
+  ,{
+    id: "figacitas-manteca",
+    title: "Figacitas de Manteca",
+    category: "salado",
+    subcategory: "Aperitivos",
+    time: "2 h",
+    servings: "12",
+    ingredients: [
+      "500 gr de harina de trigo",
+      "320 ml de leche tibia",
+      "5 gr de levadura seca",
+      "20 gr de azúcar",
+      "10 gr de sal",
+      "50 gr de manteca a temperatura ambiente",
+      "Harina de maíz o sémola para estirar"
+    ],
+    steps: [
+      "Mezclar la harina, la sal y el azúcar. Disolver la levadura en la leche tibia e incorporar. Amasar unos minutos hasta formar la masa.",
+      "Cuando el bollo esté formado, incorporar la manteca y amasar 10 minutos más hasta que quede lisa.",
+      "Dejar reposar 1 hora y media en un bowl tapado.",
+      "Espolvorear la mesada con harina de maíz y estirar con palote hasta 2,5 cm de alto.",
+      "Cortar con cortante circular y colocar en placa con papel manteca. Tapar y dejar reposar 30 minutos más hasta que dupliquen.",
+      "Pintar con manteca derretida y hornear a 180 °C por 25 minutos o hasta que doren."
+    ],
+    notes: "El tiempo de horneado varía según el horno — controlar. Se puede hacer a mano o con amasadora (7 min a velocidad media antes de agregar la manteca)."
+  }
+
+  ,{
+    id: "masa-madre",
+    title: "Masa Madre Fácil",
+    category: "salado",
+    subcategory: "Otros",
+    time: "5 días",
+    servings: "",
+    ingredients: [
+      "Harina (00, 000, integral, centeno o panificable)",
+      "Agua de canilla",
+      "1 frasco de vidrio o plástico con tapa"
+    ],
+    steps: [
+      "Día 1: Mezclar en el frasco partes iguales de harina y agua hasta obtener una textura cremosa como papilla. Tapar y dejar a temperatura ambiente (aprox. 25 °C).",
+      "Días 2 a 5: Cada día, descartar la mitad de la mezcla y alimentar con la misma cantidad de harina y agua fresca. Mantener siempre textura cremosa — si queda muy espesa agregar agua, si queda muy líquida agregar harina.",
+      "Al 5to día aprox., la masa madre va a duplicar o triplicar su volumen — esa es la señal de que está lista para usar.",
+      "Para mantenerla: seguir alimentándola regularmente con harina, agua y temperatura ambiente."
+    ],
+    notes: "La cantidad estándar de uso es 200 gr por cada kilo de harina. Si no la usás seguido, se puede guardar en la heladera y alimentarla una vez por semana."
+  }
+
+  ,{
+    id: "babka-volcan",
+    title: "Babka Volcán de Chocolate",
+    category: "dulce",
+    subcategory: "Postres",
+    time: "2 h 30 min",
+    servings: "",
+    ingredients: [
+      "— Para la masa —",
+      "500 gr de harina 0000",
+      "150 cc de leche tibia",
+      "8 gr de levadura seca",
+      "2 huevos",
+      "80 gr de azúcar",
+      "1 cdta. de sal",
+      "Ralladura de 1 naranja",
+      "40 gr de manteca pomada",
+      "— Para la crema de chocolate —",
+      "170 cc de crema de leche",
+      "80 gr de azúcar",
+      "170 gr de chocolate semiamargo",
+      "— Para el almíbar —",
+      "100 gr de azúcar",
+      "100 cc de agua"
+    ],
+    steps: [
+      "Disolver la levadura en la leche tibia. Reservar.",
+      "Mezclar los ingredientes secos, formar una corona y agregar en el centro la ralladura, los huevos y la levadura disuelta. Amasar.",
+      "Ir incorporando la manteca pomada de a poco. Amasar hasta que la masa quede lisa. Dejar leudar hasta duplicar.",
+      "Para la crema: hervir la crema con el azúcar y volcar sobre el chocolate picado. Esperar 3 minutos y mezclar hasta obtener una crema brillante. Dejar enfriar.",
+      "Estirar la masa en forma rectangular y cubrir con la crema de chocolate fría.",
+      "Enrollar desde el lado más largo formando un cilindro. Cortar longitudinalmente, unir los extremos y trenzar dejando las partes abiertas hacia arriba.",
+      "Colocar en budinera enmantecada, cubrir con film y dejar leudar.",
+      "Hornear a 160 °C por 35-40 minutos.",
+      "Hacer el almíbar hirviendo el azúcar con el agua. Embeber la babka caliente con el almíbar abundante."
+    ],
+    notes: "El corte longitudinal y el trenzado expone el relleno — en el centro queda la crema de chocolate completamente fundida al salir del horno."
+  }
+
+  ,{
+    id: "alfajorcitos-manteca",
+    title: "Alfajorcitos de Manteca (3 ingredientes)",
+    category: "dulce",
+    subcategory: "Merienda",
+    time: "30 min",
+    servings: "",
+    ingredients: [
+      "200 gr de manteca blanda",
+      "80 gr de azúcar impalpable",
+      "220 gr de harina 0000",
+      "Dulce de leche repostero para rellenar"
+    ],
+    steps: [
+      "Batir la manteca blanda con el azúcar impalpable.",
+      "Agregar la harina y unir sin amasar hasta formar una masa. Tapar y dejar 10 minutos en la heladera.",
+      "Estirar y cortar las tapitas. Llevar un poco al frío.",
+      "Hornear a 160 °C por 10 minutos aproximadamente.",
+      "Dejar enfriar completamente y rellenar con dulce de leche repostero."
+    ],
+    notes: "No llevan huevo. Se pueden freezar crudos o ya armados. Son muy suaves y se funden en la boca."
+  }
+
+  ,{
+    id: "risotto-hongos",
+    title: "Risotto de Hongos",
+    category: "salado",
+    subcategory: "Principales",
+    time: "40 min",
+    servings: "2",
+    ingredients: [
+      "1 taza de arroz carnaroli",
+      "2½ tazas de caldo caliente",
+      "¼ taza de vino blanco",
+      "1 bandeja de portobellos",
+      "6 gírgolas",
+      "1 cebolla chica picada",
+      "2 dientes de ajo picados + extra para los hongos",
+      "3 cdas. de aceite de oliva",
+      "50 gr de manteca fría",
+      "4 cdas. de queso rallado",
+      "Perejil fresco a gusto",
+      "Jugo de 1 limón",
+      "Sal y pimienta negra"
+    ],
+    steps: [
+      "Cocinar la cebolla y el ajo con aceite de oliva y sal a fuego bajo por 5 minutos hasta tiernecer.",
+      "Agregar el arroz y nacarar unos minutos. Sumar el vino blanco y dejar evaporar el alcohol.",
+      "Incorporar el caldo caliente de a poco, cocinando 15-18 minutos sin dejar de mezclar.",
+      "En otra sartén, dorar los hongos con aceite y manteca sin moverlos ni salarlos hasta que estén bien dorados.",
+      "Condimentar los hongos con ajo picado, perejil, limón, sal y pimienta.",
+      "Apagar el fuego del risotto y agregar la manteca fría y el queso rallado. Mezclar hasta emulsionar.",
+      "Servir el risotto con los hongos dorados encima."
+    ],
+    notes: "No mover los hongos hasta que estén dorados — si los movés antes largan agua y se cuecen en lugar de dorarse. El secreto del risotto cremoso es la manteca fría al final fuera del fuego."
+  }
+
+  ,{
+    id: "pollo-mostaza",
+    title: "Pollo Cremoso a la Mostaza",
+    category: "salado",
+    subcategory: "Principales",
+    time: "30 min",
+    servings: "3-4",
+    ingredients: [
+      "750 gr de pechuga de pollo",
+      "1 cdta. de paprika en polvo",
+      "2 dientes de ajo picados",
+      "1 cdta. de sal",
+      "½ cdta. de pimienta",
+      "Aceite de oliva",
+      "3 cebollines (parte blanca)",
+      "200 ml de crema de leche",
+      "2 cdas. de mostaza",
+      "1 cdta. de miel",
+      "40 gr de queso parmesano rallado",
+      "Parte verde del cebollín para decorar"
+    ],
+    steps: [
+      "Adobar el pollo con sal, ajo, pimienta y paprika.",
+      "En una sartén caliente con aceite de oliva, cocinar el pollo 12 minutos a temperatura alta hasta dorar levemente. Reservar.",
+      "En la misma sartén, sofreír el cebollín y ajo por 5 minutos.",
+      "Agregar la crema de leche, la mostaza y la miel. Mezclar.",
+      "Volver a incorporar el pollo y cocinar 5 minutos más para que todo ligue.",
+      "Servir con arroz blanco y toques de cebollín verde por encima."
+    ],
+    notes: "La miel equilibra el picante de la mostaza y le da un brillo muy lindo a la salsa. Queda muy bien con arroz blanco."
+  }
+
+  ,{
+    id: "hummus-zanahoria",
+    title: "Hummus de Zanahoria y Garbanzos",
+    category: "salado",
+    subcategory: "Aperitivos",
+    time: "20 min",
+    servings: "",
+    ingredients: [
+      "1 zanahoria",
+      "1 lata de garbanzos",
+      "Aceite de oliva",
+      "Jugo y ralladura de 1 limón",
+      "Sal a gusto",
+      "Pimentón a gusto",
+      "Comino a gusto",
+      "Curry a gusto"
+    ],
+    steps: [
+      "Pelar la zanahoria, cortar y hervir con un poco de sal hasta que esté tierna.",
+      "Escurrir y enjuagar los garbanzos. Colocar en procesadora.",
+      "Agregar aceite de oliva, ralladura y jugo de limón. Condimentar con pimentón, sal, comino y curry.",
+      "Agregar la zanahoria cocida y procesar durante bastante tiempo hasta que quede bien suave.",
+      "Servir con un chorrito de aceite de oliva y semillas."
+    ],
+    notes: "Procesar bien largo hasta que quede muy suave. El sabor es diferente al hummus clásico pero es un vicio."
+  }
+
+  ,{
+    id: "hummus-garbanzos",
+    title: "Hummus de Garbanzos",
+    category: "salado",
+    subcategory: "Aperitivos",
+    time: "15 min",
+    servings: "",
+    ingredients: [
+      "1 lata de garbanzos (o 200 gr secos remojados 8-12 hs y cocidos 45-60 min)",
+      "Aceite de oliva",
+      "Jugo de limón",
+      "Sal a gusto",
+      "Condimentos a gusto: comino, ajo, pimentón, pasta de maní",
+      "Agua fría (para ajustar textura)",
+      "Semillas para decorar (opcional)"
+    ],
+    steps: [
+      "Si usás garbanzos secos: remojar 8-12 horas y cocinar 45-60 minutos hasta que estén muy blandos.",
+      "Si usás garbanzos de lata: escurrir y enjuagar bien.",
+      "Procesar los garbanzos con aceite de oliva, jugo de limón, sal y los condimentos que elijas.",
+      "Ir agregando agua fría de a poco hasta lograr la textura deseada.",
+      "Servir decorado con semillas y un hilo de aceite de oliva."
+    ],
+    notes: "La receta original lleva tahini (pasta de sésamo) — si lo tenés, agregá 2 cdas. Si no, el aceite de oliva lo reemplaza muy bien. Podés agregar pasta de maní para darle más cremosidad."
+  }
+
+  ,{
+    id: "pebetitos-provenzal",
+    title: "Pebetitos a la Provenzal",
+    category: "salado",
+    subcategory: "Aperitivos",
+    time: "2 h 30 min",
+    servings: "18",
+    ingredients: [
+      "— Para los panes —",
+      "400 gr de harina 0000",
+      "250 ml de leche tibia",
+      "10 gr de levadura seca (1 sobre)",
+      "1 cdta. de miel",
+      "1 cda. de sal",
+      "50 gr de manteca en trozos",
+      "— Para la provenzal —",
+      "100 gr de manteca",
+      "4 dientes de ajo asado (o rehogado)",
+      "Perejil fresco picado",
+      "Sal a gusto",
+      "Queso parmesano rallado"
+    ],
+    steps: [
+      "Mezclar la levadura seca con la leche tibia y la miel. Dejar reposar 10 minutos hasta que espume.",
+      "En un bowl poner la harina con la sal. Agregar la manteca en trozos pellizcando con la harina.",
+      "Volcar la leche de a poco e ir formando la masa. Pasar a la mesada y amasar 5 minutos.",
+      "Colocar en bowl engrasado y dejar reposar 1 hora tapado.",
+      "Engrasar un molde redondo de 26 cm. Dividir la masa en 18 bollitos de aprox. 40 gr y acomodar en el molde.",
+      "Cubrir y dejar reposar otra hora más.",
+      "Pintar con leche y hornear a 160 °C por 30 minutos.",
+      "Mezclar la manteca con el ajo, el perejil y la sal hasta formar una pasta.",
+      "Apenas salen del horno, pincelar con la manteca provenzal y rallar queso parmesano encima."
+    ],
+    notes: "La base de panecitos sirve para muchas variantes: con queso y orégano, con pesto, o en versión dulce con dulce de leche y coco rallado."
+  }
+
+  ,{
+    id: "bizcochos-chipa",
+    title: "Bizcochos de Chipa",
+    category: "salado",
+    subcategory: "Aperitivos",
+    time: "35 min",
+    servings: "~50",
+    ingredients: [
+      "500 gr de fécula de mandioca",
+      "3 huevos",
+      "70 gr de manteca a temperatura ambiente",
+      "100 cc de agua (o jugo de naranja, o leche)",
+      "200 gr de queso rallado (pategras, sardo o el que tengas)",
+      "1 pizca de sal"
+    ],
+    steps: [
+      "Mezclar la fécula con la sal. Agregar la manteca a temperatura ambiente y trabajar con los dedos.",
+      "Añadir los huevos y el queso rallado. Mezclar.",
+      "Agregar el líquido de a poco hasta unir la masa. Si le falta humedad, agregar un poquito más.",
+      "Formar bolitas de aprox. 3x3 cm y colocar en placa.",
+      "Hornear a 180 °C por 20-25 minutos."
+    ],
+    notes: "Reemplazar parte del agua por jugo de naranja le da un toque diferente y rico. Con leche la miga queda más tierna. Rinde aprox. 50 bizcochitos."
+  }
+
+  ,{
+    id: "torta-nuez",
+    title: "Torta de Nuez con Dulce de Leche y Frutos Rojos",
+    category: "dulce",
+    subcategory: "Postres",
+    time: "1 h",
+    servings: "",
+    ingredients: [
+      "250 gr de nueces molidas",
+      "250 gr de azúcar",
+      "6 yemas",
+      "6 claras",
+      "— Para el armado —",
+      "Dulce de leche repostero",
+      "Crema chantilly",
+      "Frutos rojos"
+    ],
+    steps: [
+      "Mezclar las yemas con el azúcar hasta que no se sientan los granos.",
+      "Batir las claras a punto nieve.",
+      "Incorporar la mezcla de yemas a las claras con movimientos envolventes.",
+      "Sumar las nueces molidas con movimientos envolventes.",
+      "Hornear a 180 °C por aprox. 40 minutos.",
+      "Dejar enfriar y armar con capas de dulce de leche repostero, crema chantilly y frutos rojos."
+    ],
+    notes: "No lleva harina. El balance entre el dulzor del dulce de leche y la acidez de los frutos rojos es lo que la hace especial."
+  }
+
+  ,{
+    id: "cinnamon-rolls",
+    title: "Cinnamon Rolls",
+    category: "dulce",
+    subcategory: "Desayuno",
+    time: "3 h",
+    servings: "12",
+    ingredients: [
+      "— Para la masa —",
+      "500 gr de harina (250 + 250 gr)",
+      "25 gr de levadura fresca",
+      "60 ml de agua tibia",
+      "230 ml de leche",
+      "50 gr de azúcar rubio mascabo",
+      "1 huevo",
+      "60 gr de manteca",
+      "1 cdta. de esencia de vainilla",
+      "1 cdta. de sal",
+      "— Para el relleno —",
+      "75 gr de manteca pomada",
+      "150 gr de azúcar rubio mascabo",
+      "15 gr de canela",
+      "— Para el glaseado —",
+      "60 gr de queso crema",
+      "20 gr de manteca pomada",
+      "140 gr de azúcar impalpable",
+      "1 cdta. de esencia de vainilla",
+      "50 ml de leche"
+    ],
+    steps: [
+      "Deshacer la levadura con los dedos en un bowl. Agregar 1 cda. de azúcar y 60 ml de agua tibia. Tapar y dejar reposar 5-10 minutos hasta que esponje.",
+      "En otro bowl mezclar la leche, el azúcar mascabo, el huevo, la manteca y la vainilla.",
+      "Agregar el fermento y 250 gr de harina con la sal. Mezclar e incorporar los otros 250 gr. Amasar hasta formar un bollo liso.",
+      "Dejar descansar 2 horas tapado hasta duplicar.",
+      "Mezclar el azúcar mascabo con la canela para el relleno.",
+      "Estirar la masa en rectángulo. Untar con la manteca pomada y espolvorear con la mezcla de canela y azúcar.",
+      "Enrollar desde el lado más largo y cortar en 12 porciones.",
+      "Colocar en fuente enmantecada con espacio entre sí. Dejar leudar 30-60 minutos más.",
+      "Pincelar con manteca derretida y hornear a 180 °C por 30-40 minutos.",
+      "Mezclar todos los ingredientes del glaseado y volcar sobre los rolls apenas salen del horno."
+    ],
+    notes: "Variante deliciosa: rellenar con dulce de leche repostero en lugar de canela y azúcar."
+  }
+
+  ,{
+    id: "pan-brioche",
+    title: "Pan Brioche",
+    category: "dulce",
+    subcategory: "Desayuno",
+    time: "1 h 30 min",
+    servings: "",
+    ingredients: [
+      "750 gr de harina",
+      "230 ml de leche tibia",
+      "10 gr de levadura seca",
+      "50 gr de azúcar",
+      "10 gr de sal",
+      "2 huevos",
+      "200 gr de manteca",
+      "1 huevo para pintar",
+      "Semillas de sésamo"
+    ],
+    steps: [
+      "Colocar la harina en corona. Añadir la leche tibia, el azúcar, la levadura, los huevos y la sal. Integrar y amasar 5 minutos.",
+      "Agregar la manteca y amasar 10 minutos más hasta que la masa quede lisa.",
+      "Dejar reposar 30 minutos.",
+      "Formar bollos de 50 gr y colocar en asadera aceitada. Dejar reposar 40 minutos más.",
+      "Pincelar con huevo batido y espolvorear con sésamo.",
+      "Hornear a 180 °C por 30 minutos."
+    ],
+    notes: "La manteca es lo que hace que sea brioche — no apurar ese paso del amasado para que se integre bien."
+  }
+
+  ,{
+    id: "alfajores-havanna",
+    title: "Alfajores Estilo Havanna con Sal Marina",
+    category: "dulce",
+    subcategory: "Merienda",
+    time: "1 h",
+    servings: "",
+    ingredients: [
+      "— Para las tapas —",
+      "150 gr de manteca pomada",
+      "100 gr de azúcar blanco",
+      "1 cdta. de miel",
+      "1 huevo",
+      "Ralladura de naranja",
+      "Esencia de vainilla",
+      "250 gr de harina 0000",
+      "50 gr de almidón de maíz",
+      "1 cdta. de cacao amargo",
+      "1 cdta. de polvo de hornear",
+      "— Para el relleno mágico —",
+      "100 gr de dulce de leche repostero",
+      "100 gr de chocolate blanco",
+      "100 ml de crema de leche",
+      "— Para el baño —",
+      "400 gr de baño de repostería"
+    ],
+    steps: [
+      "Para el relleno: derretir el chocolate blanco con la crema caliente. Mezclar con el dulce de leche. Enfriar hasta que tome consistencia.",
+      "Batir la manteca con el azúcar y la miel. Agregar el huevo, la ralladura y la vainilla.",
+      "Incorporar la harina, el almidón, el cacao y el polvo de hornear. Unir sin amasar.",
+      "Estirar, cortar tapitas y hornear a 160-170 °C hasta que estén cocidas.",
+      "Dejar enfriar, rellenar con el relleno mágico y armar los alfajores.",
+      "Bañar en el baño de repostería derretido y dejar solidificar en la heladera."
+    ],
+    notes: "Comerlos bien fríos de heladera es clave. El relleno mágico de chocolate blanco y dulce de leche les da una textura cremosa increíble."
+  }
+
+  ,{
+    id: "budin-marmolado",
+    title: "Budín Marmolado con Baño de Chocolate",
+    category: "dulce",
+    subcategory: "Postres",
+    time: "1 h",
+    servings: "",
+    ingredients: [
+      "— Para el budín —",
+      "80 gr de manteca",
+      "80 ml de aceite",
+      "160 gr de azúcar (rubia o común)",
+      "3 huevos",
+      "30 gr de cacao",
+      "80 ml de café",
+      "120 ml de leche",
+      "280 gr de harina leudante",
+      "— Para el baño —",
+      "120 gr de chocolate",
+      "180 ml de crema de leche"
+    ],
+    steps: [
+      "Batir la manteca con el aceite y el azúcar.",
+      "Agregar los huevos de a uno.",
+      "Incorporar el café y la leche. Mezclar.",
+      "Agregar la harina leudante e integrar.",
+      "Separar una parte de la mezcla y combinarla con el cacao para hacer la parte oscura.",
+      "Volcar ambas mezclas alternadas en la budinera para crear el efecto marmolado.",
+      "Hornear a 160 °C hasta que al pinchar con palillo salga limpio (aprox. 45-50 min).",
+      "Para el baño: hervir la crema y volcar sobre el chocolate picado. Mezclar hasta obtener ganache. Volcar sobre el budín frío."
+    ],
+    notes: "El café intensifica el sabor del cacao sin que se note. Usar azúcar rubia le da un sabor más profundo."
+  }
+
+  ,{
+    id: "cookies-avena-choco",
+    title: "Cookies de Avena y Chocolate (35 unidades)",
+    category: "dulce",
+    subcategory: "Merienda",
+    time: "1 h + frío",
+    servings: "35",
+    ingredients: [
+      "340 gr de manteca (dorada/noisette)",
+      "400 gr de azúcar moreno",
+      "2 huevos + 2 yemas",
+      "1 cda. postre de vainilla",
+      "340 gr de harina",
+      "1 cda. postre de bicarbonato",
+      "1 pizca de sal",
+      "160 gr de copos de avena",
+      "400 gr de chocolate negro en trozos"
+    ],
+    steps: [
+      "Dorar la manteca a fuego lento hasta que tome color marrón claro. Enfriar a temperatura ambiente.",
+      "Batir bien la manteca con el azúcar varios minutos. Agregar los huevos, las yemas y la vainilla. Batir de nuevo.",
+      "Incorporar la harina, el bicarbonato, la sal, la avena y el chocolate de a poco. Mezclar sin amasar.",
+      "Enfriar la masa mínimo 1 hora en la heladera (mejor toda la noche).",
+      "Formar bolitas del mismo tamaño. Se pueden congelar en este punto.",
+      "Hornear a 180 °C por 7-10 minutos. Sacar aunque parezcan un poco crudas.",
+      "Dejar enfriar y agregar sal en escamas por encima."
+    ],
+    notes: "No tener miedo de sacarlas cuando parecen crudas — terminan de cocinarse con el calor residual. Congelar las bolitas y hornear desde congelado cuando se quieran."
+  }
+  
 ];
