@@ -1149,7 +1149,7 @@ var recipes = [
     id: "pan-brioche",
     title: "Pan Brioche",
     category: "dulce",
-    subcategory: "Desayuno",
+    subcategory: "Aperitivos",
     time: "1 h 30 min",
     servings: "",
     ingredients: [
