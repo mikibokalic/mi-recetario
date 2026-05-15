@@ -1148,7 +1148,7 @@ var recipes = [
   ,{
     id: "pan-brioche",
     title: "Pan Brioche",
-    category: "dulce",
+    category: "salado",
     subcategory: "Aperitivos",
     time: "1 h 30 min",
     servings: "",
@@ -1209,9 +1209,9 @@ var recipes = [
       "Bañar en el baño de repostería derretido y dejar solidificar en la heladera."
     ],
     notes: "Comerlos bien fríos de heladera es clave. El relleno mágico de chocolate blanco y dulce de leche les da una textura cremosa increíble."
-  }
+  },
 
-  ,{
+  {
     id: "budin-marmolado",
     title: "Budín Marmolado con Baño de Chocolate",
     category: "dulce",
@@ -1274,5 +1274,52 @@ var recipes = [
     ],
     notes: "No tener miedo de sacarlas cuando parecen crudas — terminan de cocinarse con el calor residual. Congelar las bolitas y hornear desde congelado cuando se quieran."
   }
-  
+  ,{
+    id: "potica",
+    title: "Potica de Nueces (Domača Orehova Potica)",
+    category: "dulce",
+    subcategory: "Postres",
+    time: "3 h + leudado",
+    servings: "",
+    ingredients: [
+      "— Para el kvasec (fermento) —",
+      "4 dag de levadura fresca",
+      "1 dl de leche tibia",
+      "2 cditas. de harina",
+      "2 cditas. de azúcar",
+      "— Para la masa —",
+      "1 kg de harina",
+      "2 cditas. de sal",
+      "1 cdita. de polvo de hornear",
+      "1 cda. grande de crema ácida",
+      "0,5 l de leche tibia",
+      "12 dag de azúcar",
+      "12 dag de manteca derretida",
+      "4 yemas",
+      "3 cdas. de ron",
+      "Ralladura de 1 limón",
+      "1 clara batida levemente (para pintar)",
+      "— Para el relleno (nadev) —",
+      "0,5 l de leche tibia",
+      "1 kg de nueces molidas",
+      "25 dag de azúcar",
+      "Ralladura de 1 limón",
+      "1 azúcar vainillado",
+      "3 cdas. de ron",
+      "1 cdita. de canela",
+      "1 cda. de miel",
+      "Clara de 1 huevo a nieve"
+    ],
+    steps: [
+      "Preparar el fermento: mezclar la levadura con la leche tibia, la harina y el azúcar. Dejar reposar hasta que espume.",
+      "Para el relleno: calentar la leche y mezclar con las nueces molidas, el azúcar, la ralladura, la vainilla, el ron, la canela y la miel. Incorporar la clara a nieve con movimientos envolventes. Reservar.",
+      "Para la masa: mezclar la harina con la sal y el polvo de hornear. Agregar el fermento, la crema ácida, la leche tibia, el azúcar, la manteca derretida, las yemas, el ron y la ralladura. Amasar hasta obtener una masa lisa.",
+      "Dejar leudar la masa 1 hora y media hasta que duplique su volumen.",
+      "Estirar la masa leudada a ½ cm de espesor. Untar el relleno de nueces de manera uniforme y espolvorear con nueces molidas secas.",
+      "Enrollar lo más apretado posible para que no entre aire. Colocar en molde y dejar reposar 1 hora más.",
+      "Pinchar toda la superficie con aguja o tenedor. Pintar con la clara levemente batida.",
+      "Hornear en horno precalentado a 175 °C por aproximadamente 1 hora."
+    ],
+    notes: "Receta tradicional eslovena, típica de las grandes celebraciones. La clave está en enrollar bien apretado para que no queden burbujas de aire adentro."
+  }
 ];
